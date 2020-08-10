@@ -5,6 +5,9 @@ html {
 body {
   background-color: #E8ECEF;
 }
+.text-footer{
+  color:gray;
+}
 .back{
   margin-left: 50px;
   margin-bottom: 50px;
