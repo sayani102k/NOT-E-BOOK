@@ -1,0 +1,45 @@
+<%- include('partials/header') %>
+<form action="/" method="POST">
+<div class="card-deck">
+  <div class="card">
+    <div style="width:100%; text-align:center">
+    <img class="card-img-top" src="/images/scienceuse.png" alt="Card image cap">
+    </div>
+    <div class="card-body">
+      <h3 class="card-title">Science</h3>
+      <p class="card-text">Explore the great field of Scientific learning.</p>
+      <form action="/science" method="POST">
+       <a href="/subject/science" type="submit" class="form-control btn btn-success">LEARN</a>
+       </form>
+    </div>
+  </div>
+  <div class="card">
+    <div style="width:100%; text-align:center">
+    <img class="card-img-top" src="/images/maths.png" alt="Card image cap">
+    </div>
+    <div class="card-body">
+      <h3 class="card-title">Maths</h3>
+      <p class="card-text">Explore the wonderful and amazing world of Mathematics.</p>
+        <form action="/maths" method="POST">
+      <a href="/subject/maths" type="submit" class="form-control btn btn-success">LEARN</a>
+      </form>
+    </div>
+  </div>
+  <div class="card">
+    <div style="width:100%; text-align:center">
+    <img class="card-img-top" src="/images/sstuse.png" alt="Card image cap">
+    </div>
+    <div class="card-body">
+      <h3 class="card-title">Social Science.</h3>
+      <p class="card-text">Increase your intellect with Social Studies.</p>
+        <form action="/socialstudies" method="POST">
+      <a href="/subject/socialstudies" type="submit" class="form-control btn btn-success">LEARN</a>
+      </form>
+    </div>
+  </div>
+</div>
+</form>
+
+<a class="back btn btn-light btn-lg" href="/logout" role="button">Log Out</a>
+
+<%- include('partials/footer') %>

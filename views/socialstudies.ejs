@@ -1,0 +1,23 @@
+<%- include('partials/header') %>
+
+<div class="jumbotron text-center">
+  <div class="container">
+    <h1 class="pagehead display-3">Social Studies Facts</h1>
+
+    <%posts.forEach(function(user){%>
+      <div  class="scroll" style="overflow-y:scroll; height:150px; background:white">
+      <h2 class="header-color"><%=user.title%></h2>
+      <p><%=user.content%></p>
+      </div>
+      <%});%>
+
+    <hr>
+    <a class="tabs btn btn-light btn-lg" href="/logout" role="button">Log Out</a>
+
+
+
+  </div>
+</div>
+
+<a class="back btn btn-light btn-lg" href="/subject" role="button">Back</a>
+<%- include('partials/footer') %>
